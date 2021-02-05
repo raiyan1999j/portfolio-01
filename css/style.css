@@ -1,0 +1,288 @@
+body {
+    padding: 0px;
+    background-color: #dfe6e9;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*left*/
+.left {
+    position: fixed;
+    height: 100%;
+    width: 40%;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+}
+
+/*right*/
+.right {
+    width: 58%;
+    float: right;
+    color: lightslategray;
+    position:relative;
+}
+
+/*btn-fixed*/
+.btn-fixed-1,
+.btn-fixed-2 {
+    position: fixed;
+    background-color: #dfe6e9;
+    color: black;
+    padding: 10px;
+    right: 10px;
+    border: none;
+    font-size: 25px;
+}
+
+.btn-fixed-1,
+.btn-fixed-2:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+ul {
+    height:100%;
+    width:58%;
+    list-style-type: none;
+    text-align: center;
+    display: none;
+    top:5%;
+    right:0%;
+    background-color:black;
+    position: fixed;
+    overflow:hidden;
+    z-index:1;
+}
+li {
+    padding: 10px 10px;
+    margin-top:50px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 25px;
+    display:inline-block;
+    color: white;
+}
+li a::after{
+    content:'';
+    display:block;
+    width:0px;
+    height:3px;
+    background-image:linear-gradient(to right,crimson,hotpink);
+    transition: width .4s;
+}
+li a:hover::after{
+    width:100%;
+}
+.support{z-index:-1;}
+/*header*/
+.btn-header {
+    background-color: lightgrey;
+    opacity: 0.6;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+}
+
+.btn-header:hover {
+    opacity: 1;
+}
+
+/*portfolio*/
+.flex-port {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.port-item {
+    flex: 50%;
+    padding: 5px;
+}
+
+.port-item img {
+    margin-top: 8px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*progress*/
+.flex-prog {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    margin-left: 15%;
+}
+
+.prog-item {
+    flex: 25%;
+    color: white;
+}
+
+.progress {
+    height: 25px;
+    width: 100%;
+    background-color: lightgrey;
+    margin-bottom: 5%;
+}
+
+[class*='item-'] {
+    background-color: black;
+    opacity: 0.6;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.html {
+    width: 95%;
+}
+
+.design {
+    width: 85%;
+}
+
+.photo {
+    width: 80%;
+}
+
+/*article*/
+.flex-art {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0px;
+}
+
+.art-item {
+    margin: 0px 10px;
+}
+
+.art-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+/*menu*/
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.col-item {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.col-item:nth-child(7) {
+    background-color: black;
+    border: none;
+    opacity: 0.6;
+}
+
+.col-btn {
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+}
+
+.add,
+.non-add {
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+}
+
+.non-add {
+    opacity: 1;
+}
+
+.col-btn:hover {
+    background-color: #1e272e;
+    opacity: 1;
+    color: white;
+}
+
+.shadow:hover {
+    box-shadow: 8px 5px 3px #d2dae2;
+}
+
+/*location*/
+.art-icon {
+    font-size: 35px;
+    width: 50px;
+}
+
+/*bg-image*/
+.bg-image {
+    background-image: url(../image/map.jpg);
+    height: 450px;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+/*info*/
+input {
+    padding: 10px 8px;
+    background-color: lightgrey;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0px;
+}
+
+::placeholder {
+    color: black;
+    opacity: 0.6;
+}
+
+.container {
+    width: 95%;
+    margin: 10px auto;
+}
+
+/*footer*/
+.link {
+    color: black;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: lightgreen;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.display-1 {
+    font-size: 25px;
+}
+
+.display-2 {
+    font-size: 15px;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.col-2 {
+    width: 48%;
+}
+
+[class*='col-'] {
+    float: left;
+    padding: 15px;
+}
